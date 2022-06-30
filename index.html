@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <header>
     <div class="highscores"><a href="highscores.html">See Your Highscores</a></div>
 
     <div class="countdown">countdown: <span id="countdown">0</span></div>
@@ -19,12 +20,20 @@
                 Welcome to the interview quiz. In the next few minutes you will be asked questions related to your job you applied for. Try your best this is a timed quiz.
 
             </p>
+    </header>        
+            <h1 class="time" style="text-align:right;"></h1>
             <button id="start-button">Start Here</button>
         </div>
         
         <div id="interviewQuestions" class="hide">
-            <h2 id="question"></h2>
-        <div id="interviewAnswers" class="answers"></div>
+            <h1>Interview Questions</h1>
+            <div id="question">
+
+                <div id="question1" class="answer1"></div>
+                <div id="question2" class="answer2"></div>
+                <div id="question3" class="answer3"></div>
+                <div id="question4" class="answer4"></div>
+      
         </div>
 
         <div id="interviewResults" class="hide">
@@ -34,6 +43,6 @@
             </p>
             <button id="restart-button">Restart</button>
         </div>
-           <script src="script.js"></script>
+           <script src="assests/script.js"></script>
 </body>
 </html>
