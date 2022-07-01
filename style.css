@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background: #007bff;
+}
+.start-btn,
+.info-box,
+.quiz-questions,
+.highscore{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2),;
+                0px 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+ .start-btn button{
+    font-size: 25px;
+    font-weight: 500;
+    color: #007bff;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;    
+    cursor: pointer;
+ }
+
+ .info-box{
+    width: 540px;
+    background: #fff;
+    border-radius: 5px;
+    opacity: 0; 
+    pointer-events: none;
+    transform: translate(-50%, -50%); scale(0.9); 
+}
+
+ .info-box .info-title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-size: 20px;
+    font-weight: 600;
+ }
+
+.info-box .info-list{
+    padding: 15px 35px;
+}
+.info-box .info-list .info{
+    margin: 5px 0;
+    font-size: 17px;
+}
+.info-box .buttons next{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1px solid lightgrey;
+}
+.info-box .buttons button{
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.buttons button.finish{
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.buttons button.restart{
+    color: #007bff;
+    border-color: #007bff;
+}
+.quiz-questions{
+    width: 550px;
+    background: #fff;
+    border-radius: 5px;
+    opacity: 0; 
+    pointer-events: none;
+    transform: translate(-50%, -50%); scale(0.9);
+}
+.quiz-questions header{
+    position: relative;
+    z-index: 99;
+    height: 70px;
+    padding: 0 30px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+}
+.quiz-questions header .title{
+    font-size: 20px;
+    font-weight:600;
+}
+.quiz-questions header .timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+}
+.quiz-questions .section{
+    padding: 25px 30px 20 px 30px;
+    background: #fff;
+}
+.quiz-questions .section .text{
+    font-size: 25px;
+    font-weight: 600;
+}
+.quiz-questions .section .choices-list{
+    padding: 20px 0;
+    display: block;
+}
+section .choices-list .choices{
+    background: aliceblue;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+section .choices-list .choices:hover{
+    color: #004085;
+    background: #cce5ff;
+    border-color: #b8daff;
+}
+
+.choices-list .choices:last-child{
+    margin-bottom: 0px;
+}
+/* .choices-list .choices .icon{
+    height: 26px;
+    width: 26px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+.choices-list .choices .icon.tick{ */
+.highscore{
+    background: #fff;
+    width: 450px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0; 
+    pointer-events: none;
+    transform: translate(-50%, -50%); scale(0.9);
+}
+
+/* view highscores upper left nav bar color purple light 
+/* countdown timer align text and timer right nav bar time countdown light purple
+/*first load page welcome to interview question 
+/* show instructions and start button
+/* click start button start timer show questions with choices
+/* questions center black bolder 
+/* choices square boxes per choice clickable and hover over color change box purple text white hover light purple text white
+/*user choice shows correct or wrong on bottom prompt correct or wrong
+/*user choice wrong remove 10sec from clock turn answer red move to next question 
+/*end game screen white with black text your score is ""/4 questions enter intials
+/*submit intials submit button purple with white text clickable and takes to highscore page, where intials of passed interview shows score and intial white background black text 
+/*reset button purple dark hover button light purple text white
