@@ -1,15 +1,15 @@
-var timeleft = 60;
-var downloadTimer = setInterval(function(){
-  if(timeleft <= 0){
-    clearInterval(downloadTimer);
-    document.querySelector(".time-sec").innerHTML = "Finished";
-  } else {
-    console.log(timeleft)
-    document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
-  }
-  timeleft -= 1;
-}, 1000);
-// var timeleft = 60;
+// // var timeleft = 60;
+// var downloadTimer = setInterval(function(){
+//   if(timeleft <= 0){
+//     clearInterval(downloadTimer);
+//     document.querySelector(".time-sec").innerHTML = "Finished";
+//   } else {
+//     console.log(timeleft)
+//     document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+//   }
+//   timeleft -= 1;
+// }, 1000);
+// // var timeleft = 60;
 // var downloadTimer = setInterval(function(){
 //   if(timeleft <= 0){
 //     clearInterval(downloadTimer);
